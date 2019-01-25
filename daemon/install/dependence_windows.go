@@ -8,7 +8,7 @@ import (
 	"io"
 	"log"
 	"os"
-	"yulong-hids/daemon/common"
+	"github.com/winstark212/hao-hids/daemon/common"
 
 	"github.com/StackExchange/wmi"
 )

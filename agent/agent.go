@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"yulong-hids/agent/client"
+	"github.com/winstark212/hao-hids/agent/client"
 )
 
 func main() {

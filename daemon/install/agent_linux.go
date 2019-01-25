@@ -4,7 +4,7 @@ package install
 import (
 	"log"
 	"os"
-	"yulong-hids/daemon/common"
+	"github.com/winstark212/hao-hids/daemon/common"
 )
 
 func Agent(ip string, installPath string, arch string) error {
@@ -29,7 +29,7 @@ func Agent(ip string, installPath string, arch string) error {
 	}
 	//启动服务
 	log.Println("Start the service")
-	cmd = "systemctl start yulong-hids"
+	cmd = "systemctl start github.com/winstark212/hao-hids"
 	out, err = common.CmdExec(cmd)
 	if err == nil && len(out) == 0 {
 		log.Println("Start service successfully")

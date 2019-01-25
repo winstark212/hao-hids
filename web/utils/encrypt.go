@@ -12,7 +12,7 @@ import (
 	"path"
 	"strings"
 	"time"
-	"yulong-hids/web/settings"
+	"github.com/winstark212/hao-hids/web/settings"
 )
 
 // GetPassword create password like "google auth"

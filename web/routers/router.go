@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"yulong-hids/web/controllers"
+	"github.com/winstark212/hao-hids/web/controllers"
 
 	"github.com/astaxie/beego"
 )

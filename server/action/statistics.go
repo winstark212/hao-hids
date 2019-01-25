@@ -1,7 +1,7 @@
 package action
 
 import (
-	"yulong-hids/server/models"
+	"github.com/winstark212/hao-hids/server/models"
 	"strings"
 
 	"gopkg.in/mgo.v2/bson"

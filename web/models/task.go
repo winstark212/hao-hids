@@ -4,8 +4,8 @@ import (
 	"regexp"
 	"strings"
 	"time"
-	"yulong-hids/web/models/wmongo"
-	"yulong-hids/web/utils"
+	"github.com/winstark212/hao-hids/web/models/wmongo"
+	"github.com/winstark212/hao-hids/web/utils"
 
 	"github.com/astaxie/beego"
 	"gopkg.in/mgo.v2/bson"

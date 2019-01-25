@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
-	"yulong-hids/server/models"
+	"github.com/winstark212/hao-hids/server/models"
 )
 
 func isLan(ip string) bool {

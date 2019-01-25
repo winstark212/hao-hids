@@ -5,7 +5,7 @@ package collect
 import (
 	"regexp"
 	"time"
-	"yulong-hids/agent/common"
+	"github.com/winstark212/hao-hids/agent/common"
 )
 
 var allInfo = make(map[string][]map[string]string)

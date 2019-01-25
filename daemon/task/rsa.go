@@ -9,7 +9,7 @@ import (
 	"io/ioutil"
 	"log"
 	"math/big"
-	"yulong-hids/daemon/common"
+	"github.com/winstark212/hao-hids/daemon/common"
 )
 
 func setPublicKey() {

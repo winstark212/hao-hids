@@ -16,7 +16,7 @@ import (
 	"strconv"
 	"strings"
 	"time"
-	"yulong-hids/web/settings"
+	"github.com/winstark212/hao-hids/web/settings"
 
 	"github.com/astaxie/beego"
 

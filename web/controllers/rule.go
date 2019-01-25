@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"encoding/json"
-	"yulong-hids/web/models"
+	"github.com/winstark212/hao-hids/web/models"
 
 	"github.com/astaxie/beego"
 

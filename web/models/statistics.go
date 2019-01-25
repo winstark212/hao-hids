@@ -2,7 +2,7 @@ package models
 
 import (
 	"time"
-	"yulong-hids/web/models/wmongo"
+	"github.com/winstark212/hao-hids/web/models/wmongo"
 
 	"github.com/astaxie/beego"
 

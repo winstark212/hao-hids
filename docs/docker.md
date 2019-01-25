@@ -18,13 +18,13 @@
 #### Step1. 下载源码
 
 ```
-$ git clone https://github.com/ysrc/yulong-hids.git
+$ git clone https://github.com/ysrc/github.com/winstark212/hao-hids.git
 ```
 
 #### Step2. 初次编译并运行
 
 ```
-$ cd yulong-hids/
+$ cd github.com/winstark212/hao-hids/
 $ docker-compose up
 ```
 
@@ -45,7 +45,7 @@ $ docker-compose up
 :-: | :-: | :-:
 `yulong` | `All_life_is_a_game_of_luck.` | <img src="./docker_totp_default.png" width="128px"> `IVFHGS2OGYTXIVDGEIZWCNC2MVMHYWDRK44GOQALPNJHGRS6FE2QUCT4`
 
-值得一提的是，初始化的第3步所需要上传的文件需前往[Release发布页](https://github.com/ysrc/yulong-hids/releases) 下载发行版 zip 包，并解压，然后上传对应的 `win-32.zip`,`win-64.zip`,`linux-64.zip` 即可。
+值得一提的是，初始化的第3步所需要上传的文件需前往[Release发布页](https://github.com/ysrc/github.com/winstark212/hao-hids/releases) 下载发行版 zip 包，并解压，然后上传对应的 `win-32.zip`,`win-64.zip`,`linux-64.zip` 即可。
 
 #### Step4. 重新启动
 
@@ -111,7 +111,7 @@ Agent 连接 Server 请直接参考真机布署文档即可
 
 **Q2**: 如何停止所有服务?
 
-**A2**: 在 yulong-hids 目录下执行: `docker-compose stop`
+**A2**: 在 github.com/winstark212/hao-hids 目录下执行: `docker-compose stop`
 
 **Q3**: 怎么修改 web 的配置文件?
 

@@ -5,7 +5,7 @@ package collect
 import (
 	"fmt"
 	"os"
-	"yulong-hids/agent/common"
+	"github.com/winstark212/hao-hids/agent/common"
 
 	"golang.org/x/sys/windows/registry"
 )

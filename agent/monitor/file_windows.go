@@ -121,7 +121,7 @@ import "C"
 import (
 	"log"
 	"runtime"
-	"yulong-hids/agent/common"
+	"github.com/winstark212/hao-hids/agent/common"
 
 	"os"
 	"strings"

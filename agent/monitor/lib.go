@@ -11,7 +11,7 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
-	"yulong-hids/agent/common"
+	"github.com/winstark212/hao-hids/agent/common"
 
 	pcap "github.com/akrennmair/gopcap"
 	"github.com/go-fsnotify/fsnotify"

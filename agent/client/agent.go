@@ -13,9 +13,9 @@ import (
 	"strings"
 	"sync"
 	"time"
-	"yulong-hids/agent/collect"
-	"yulong-hids/agent/common"
-	"yulong-hids/agent/monitor"
+	"github.com/winstark212/hao-hids/agent/collect"
+	"github.com/winstark212/hao-hids/agent/common"
+	"github.com/winstark212/hao-hids/agent/monitor"
 
 	"github.com/smallnest/rpcx/client"
 	"github.com/smallnest/rpcx/share"

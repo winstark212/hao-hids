@@ -1,15 +1,15 @@
 FROM golang:1.10 as builder
 
-RUN mkdir -p /go/src/yulong-hids
-WORKDIR /go/src/yulong-hids
-ADD . /go/src/yulong-hids
+RUN mkdir -p /go/src/github.com/winstark212/hao-hids
+WORKDIR /go/src/github.com/winstark212/hao-hids
+ADD . /go/src/github.com/winstark212/hao-hids
 RUN go build -o ./web/web --ldflags='-w -s -linkmode external -extldflags "-static"' ./web/main.go
 
 FROM alpine
 MAINTAINER Jason Cooper "mrderek@protonmail.com"
 RUN mkdir /web
 WORKDIR /web
-COPY --from=builder /go/src/yulong-hids/web/ .
+COPY --from=builder /go/src/github.com/winstark212/hao-hids/web/ .
 RUN cp ./conf/app-config-sample.conf ./conf/app.conf
 RUN apk update
 RUN apk upgrade

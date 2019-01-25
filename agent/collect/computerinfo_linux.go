@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"os"
 	"strings"
-	"yulong-hids/agent/common"
+	"github.com/winstark212/hao-hids/agent/common"
 )
 
 // GetComInfo 获取计算机信息

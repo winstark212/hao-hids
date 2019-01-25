@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"yulong-hids/web/utils"
+	"github.com/winstark212/hao-hids/web/utils"
 
 	"github.com/astaxie/beego"
 )

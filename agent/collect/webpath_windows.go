@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"runtime"
 	"strings"
-	"yulong-hids/agent/common"
+	"github.com/winstark212/hao-hids/agent/common"
 )
 
 func pathExists(path string) bool {

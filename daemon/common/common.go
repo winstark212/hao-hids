@@ -54,9 +54,9 @@ func init() {
 		} else {
 			Arch = "64"
 		}
-		InstallPath = os.Getenv("SystemDrive") + `/yulong-hids/`
+		InstallPath = os.Getenv("SystemDrive") + `/github.com/winstark212/hao-hids/`
 	} else {
-		InstallPath = `/usr/yulong-hids/`
+		InstallPath = `/usr/github.com/winstark212/hao-hids/`
 		if data, _ := CmdExec("getconf LONG_BIT"); InArray([]string{"32", "64"}, data, false) {
 			Arch = data
 		}

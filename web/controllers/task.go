@@ -2,8 +2,8 @@ package controllers
 
 import (
 	"encoding/json"
-	"yulong-hids/web/models"
-	"yulong-hids/web/settings"
+	"github.com/winstark212/hao-hids/web/models"
+	"github.com/winstark212/hao-hids/web/settings"
 
 	"github.com/astaxie/beego"
 	"gopkg.in/mgo.v2/bson"

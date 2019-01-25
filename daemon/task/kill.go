@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"regexp"
 	"runtime"
-	"yulong-hids/daemon/common"
+	"github.com/winstark212/hao-hids/daemon/common"
 )
 
 // KillProcess 根据进程名结束进程

@@ -9,7 +9,7 @@ import (
 	"log"
 	"net"
 	"strings"
-	"yulong-hids/daemon/common"
+	"github.com/winstark212/hao-hids/daemon/common"
 )
 
 type taskServer struct {

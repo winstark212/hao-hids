@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"strconv"
-	"yulong-hids/web/models"
+	"github.com/winstark212/hao-hids/web/models"
 )
 
 // MonitorController old contorller

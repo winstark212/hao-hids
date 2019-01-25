@@ -18,17 +18,17 @@ Golang环境安装可以[参照](https://github.com/astaxie/build-web-applicatio
 
 - 下载安装对应安装包 https://golang.google.cn/dl/ 安装 golang 
 - windows 下编译需注意：32位版本须在 32 位版本 win7/2003 下编译。Win版本 agent 代码做了兼容，如只编译32位亦可在64位系统中正常工作
-- `go get github.com/ysrc/yulong-hids` 之后在 `{gopath}/src/github.com/ysrc/yulong-hids` 下的项目编译后是会出现预期外异常的，请根据接下来的指导文档进行编译。
+- `go get github.com/ysrc/github.com/winstark212/hao-hids` 之后在 `{gopath}/src/github.com/ysrc/github.com/winstark212/hao-hids` 下的项目编译后是会出现预期外异常的，请根据接下来的指导文档进行编译。
 
 ```
 cd C:\Go\src
-git clone https://github.com/ysrc/yulong-hids/
+git clone https://github.com/ysrc/github.com/winstark212/hao-hids/
 
 // 编译agent
-go build -o yulong-hids\bin\win-64\agent.exe --ldflags="-w -s" yulong-hids\agent\agent.go
+go build -o github.com/winstark212/hao-hids\bin\win-64\agent.exe --ldflags="-w -s" github.com/winstark212/hao-hids\agent\agent.go
 
 // 编译daemon
-go build -o yulong-hids\bin\win-64\daemon.exe --ldflags="-w -s" yulong-hids\daemon\daemon.go
+go build -o github.com/winstark212/hao-hids\bin\win-64\daemon.exe --ldflags="-w -s" github.com/winstark212/hao-hids\daemon\daemon.go
 ```
 
 ```
@@ -48,13 +48,13 @@ export GOPATH=$HOME/gopath (可选设置)
 source /etc/profile
 
 cd /usr/local/go/src
-git clone https://github.com/ysrc/yulong-hids/
+git clone https://github.com/ysrc/github.com/winstark212/hao-hids/
 
 // 编译agent
-go build -o yulong-hids/bin/linux-64/agent --ldflags="-w -s" yulong-hids/agent/agent.go
+go build -o github.com/winstark212/hao-hids/bin/linux-64/agent --ldflags="-w -s" github.com/winstark212/hao-hids/agent/agent.go
 
 // 编译daemon
-go build -o yulong-hids/bin/linux-64/daemon --ldflags="-w -s" yulong-hids/daemon/daemon.go
+go build -o github.com/winstark212/hao-hids/bin/linux-64/daemon --ldflags="-w -s" github.com/winstark212/hao-hids/daemon/daemon.go
 ```
 
 > 编译后需压缩为不同系统的zip文件（如agent.exe、daemon.exe、data.zip），在向导过程中上传。  
@@ -63,8 +63,8 @@ go build -o yulong-hids/bin/linux-64/daemon --ldflags="-w -s" yulong-hids/daemon
 
 ### 服务端（Server、Web）
 ```
-go build -o yulong-hids/bin/server --ldflags="-w -s" yulong-hids/server/server.go
-go build -o yulong-hids/web/web --ldflags="-w -s" yulong-hids/web/main.go
+go build -o github.com/winstark212/hao-hids/bin/server --ldflags="-w -s" github.com/winstark212/hao-hids/server/server.go
+go build -o github.com/winstark212/hao-hids/web/web --ldflags="-w -s" github.com/winstark212/hao-hids/web/main.go
 ```
 
 
@@ -82,7 +82,7 @@ Windows Driver Kits->WDK 7600.16385.1->Build Environments->Windows Vista and Win
 Build Environment
 具体根据你的系统选择Build Environments，要编译32位的就选x86。
 
-cd C:\Go\src\yulong-hids\driver\
+cd C:\Go\src\github.com/winstark212/hao-hids\driver\
 build
 
 // Linux内核
@@ -99,7 +99,7 @@ openSUSE
 zypper install kernel-devel
 
 安装好对应kernel-devel包后cd进目录就可以编译了
-cd /usr/local/go/src/yulong-hids/syscall_hook
+cd /usr/local/go/src/github.com/winstark212/hao-hids/syscall_hook
 make
 
 ```

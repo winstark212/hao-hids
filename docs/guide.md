@@ -8,7 +8,7 @@
 
 ## step.2
 
-初始化规则, 规则可以自己编写，也可以使用默认规则，默认规则可在 release 包内的 rules.json 找到，也可以复制 [rules.json](https://github.com/ysrc/yulong-hids/blob/master/rules.json) 里的内容。
+初始化规则, 规则可以自己编写，也可以使用默认规则，默认规则可在 release 包内的 rules.json 找到，也可以复制 [rules.json](https://github.com/ysrc/github.com/winstark212/hao-hids/blob/master/rules.json) 里的内容。
 
 ![](./web_guide_rules.png)
 

@@ -338,7 +338,7 @@
         },
         "rules": {
             "command": {
-                "data": "systemctl stop yulong-hids|net stop yulong-hids",
+                "data": "systemctl stop github.com/winstark212/hao-hids|net stop github.com/winstark212/hao-hids",
                 "type": "regex"
             }
         },

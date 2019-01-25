@@ -12,7 +12,7 @@ import (
 	"os/exec"
 	"path/filepath"
 	"runtime"
-	"yulong-hids/daemon/common"
+	"github.com/winstark212/hao-hids/daemon/common"
 )
 
 //下载文件

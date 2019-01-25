@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"yulong-hids/web/models"
+	"github.com/winstark212/hao-hids/web/models"
 
 	"gopkg.in/mgo.v2/bson"
 )

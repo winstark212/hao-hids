@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
 	"time"
-	"yulong-hids/server/models"
+	"github.com/winstark212/hao-hids/server/models"
 
 	"github.com/paulstuart/ping"
 	"gopkg.in/mgo.v2/bson"

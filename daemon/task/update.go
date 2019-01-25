@@ -9,8 +9,8 @@ import (
 	"os"
 	"runtime"
 	"time"
-	"yulong-hids/daemon/common"
-	"yulong-hids/daemon/install"
+	"github.com/winstark212/hao-hids/daemon/common"
+	"github.com/winstark212/hao-hids/daemon/install"
 )
 
 func agentUpdate(ip string, installPath string, arch string) (bool, error) {

@@ -10,9 +10,9 @@ var re = regexp.MustCompile(`^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\
 // TestGetLoginLog GetLoginLog的测试模块
 /*
 
-command: go test -timeout 30s yulong-hids/agent/collect -run ^TestGetLoginLog$
+command: go test -timeout 30s github.com/winstark212/hao-hids/agent/collect -run ^TestGetLoginLog$
 
-Fail output in issue: https://github.com/ysrc/yulong-hids/issues/29 :
+Fail output in issue: https://github.com/ysrc/github.com/winstark212/hao-hids/issues/29 :
 
 --- FAIL: TestGetLoginLog (0.06s)
         loginlog_windows_test.go:23: Remote is "65014", want ip address string.
@@ -30,7 +30,7 @@ Fail output in issue: https://github.com/ysrc/yulong-hids/issues/29 :
         loginlog_windows_test.go:23: Remote is "52694", want ip address string.
         loginlog_windows_test.go:23: Remote is "63787", want ip address string.
 FAIL
-FAIL    yulong-hids/agent/collect       0.094s
+FAIL    github.com/winstark212/hao-hids/agent/collect       0.094s
 
 */
 func TestGetLoginLog(t *testing.T) {

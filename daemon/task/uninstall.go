@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 	"runtime"
-	"yulong-hids/daemon/common"
+	"github.com/winstark212/hao-hids/daemon/common"
 )
 
 // UnInstallALL 卸载
@@ -19,7 +19,7 @@ func UnInstallALL() {
 	}
 	common.KillAgent()
 	if err := common.Service.Uninstall(); err != nil {
-		log.Println("Uninstall yulong-hids error:", err.Error())
+		log.Println("Uninstall github.com/winstark212/hao-hids error:", err.Error())
 	}
 	log.Println("Uninstall completed")
 	os.Exit(1)

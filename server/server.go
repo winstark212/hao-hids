@@ -8,9 +8,9 @@ import (
 	"log"
 	"time"
 
-	"yulong-hids/server/action"
-	"yulong-hids/server/models"
-	"yulong-hids/server/safecheck"
+	"github.com/winstark212/hao-hids/server/action"
+	"github.com/winstark212/hao-hids/server/models"
+	"github.com/winstark212/hao-hids/server/safecheck"
 
 	"github.com/smallnest/rpcx/protocol"
 	"github.com/smallnest/rpcx/server"

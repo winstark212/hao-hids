@@ -3,8 +3,8 @@ package models
 import (
 	"encoding/json"
 	"time"
-	"yulong-hids/web/models/wmongo"
-	"yulong-hids/web/settings"
+	"github.com/winstark212/hao-hids/web/models/wmongo"
+	"github.com/winstark212/hao-hids/web/settings"
 
 	"github.com/astaxie/beego"
 	"gopkg.in/mgo.v2/bson"

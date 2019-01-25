@@ -10,7 +10,7 @@ import (
 	"log"
 	"os"
 	"strings"
-	"yulong-hids/daemon/common"
+	"github.com/winstark212/hao-hids/daemon/common"
 )
 
 func Dependency(ip string, installPath string, arch string) error {

@@ -11,7 +11,7 @@ import (
 	"regexp"
 	"strings"
 	"time"
-	"yulong-hids/agent/common"
+	"github.com/winstark212/hao-hids/agent/common"
 )
 
 type utmp struct {

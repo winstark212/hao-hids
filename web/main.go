@@ -1,9 +1,9 @@
 package main
 
 import (
-	_ "yulong-hids/web/routers"
-	"yulong-hids/web/settings"
-	"yulong-hids/web/utils"
+	_ "github.com/winstark212/hao-hids/web/routers"
+	"github.com/winstark212/hao-hids/web/settings"
+	"github.com/winstark212/hao-hids/web/utils"
 
 	"github.com/astaxie/beego"
 )

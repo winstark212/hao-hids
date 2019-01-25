@@ -5,7 +5,7 @@ package install
 import (
 	"log"
 	"strings"
-	"yulong-hids/daemon/common"
+	"github.com/winstark212/hao-hids/daemon/common"
 )
 
 // Agent 下载安装agent
@@ -31,9 +31,9 @@ func Agent(ip string, installPath string, arch string) error {
 	}
 	// 启动服务
 	log.Println("Start the service")
-	cmd = "net start yulong-hids"
+	cmd = "net start github.com/winstark212/hao-hids"
 	out, err = common.CmdExec(cmd)
-	if err == nil && strings.Contains(out, "yulong-hids") {
+	if err == nil && strings.Contains(out, "github.com/winstark212/hao-hids") {
 		log.Println("Start service successfully")
 		return nil
 	}

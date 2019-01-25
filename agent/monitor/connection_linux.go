@@ -195,7 +195,7 @@ import "C"
 import (
 	"fmt"
 	"strings"
-	"yulong-hids/agent/common"
+	"github.com/winstark212/hao-hids/agent/common"
 
 	"github.com/akrennmair/gopcap"
 )

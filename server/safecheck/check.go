@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"strings"
 	"time"
-	"yulong-hids/server/models"
+	"github.com/winstark212/hao-hids/server/models"
 
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"

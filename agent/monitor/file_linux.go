@@ -23,7 +23,7 @@ import (
 	"log"
 	"os"
 	"strings"
-	"yulong-hids/agent/common"
+	"github.com/winstark212/hao-hids/agent/common"
 
 	"github.com/go-fsnotify/fsnotify"
 )

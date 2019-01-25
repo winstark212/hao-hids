@@ -142,7 +142,7 @@ import (
 	"os"
 	"strconv"
 	"strings"
-	"yulong-hids/agent/common"
+	"github.com/winstark212/hao-hids/agent/common"
 
 	"github.com/StackExchange/wmi"
 )

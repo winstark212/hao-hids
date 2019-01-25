@@ -140,8 +140,8 @@ discovery.zen.ping.unicast.hosts: ["10.100.100.100"]
 
  - 修改 web 的配置，必须改名为 app.conf
 
-   `mv yulong-hids/web/conf/app-config-sample.conf yulong-hids/web/conf/app.conf`
-   `vi yulong-hids/web/conf/app.conf`
+   `mv github.com/winstark212/hao-hids/web/conf/app-config-sample.conf github.com/winstark212/hao-hids/web/conf/app.conf`
+   `vi github.com/winstark212/hao-hids/web/conf/app.conf`
 
    主要是改3个地方
 
@@ -155,10 +155,10 @@ discovery.zen.ping.unicast.hosts: ["10.100.100.100"]
 
 #### 启动 web
 
-可以直接用 YSRC 编译好的[版本](https://github.com/ysrc/yulong-hids/releases),也可以参照[编译指南](./build.md)自行编译。
+可以直接用 YSRC 编译好的[版本](https://github.com/ysrc/github.com/winstark212/hao-hids/releases),也可以参照[编译指南](./build.md)自行编译。
 
 cd 进 web 目录
-`cd yulong-hids/web/`
+`cd github.com/winstark212/hao-hids/web/`
 
 `./web`  启动 web，如果是下的编译好的二进制需要赋予执行权限 `chmod +x web/web`
 
@@ -190,13 +190,13 @@ win 版本控制台运行 web.exe 后通过浏览器访问进入向导过程，�
 cd %SystemDrive% & certutil -urlcache -split -f http://10.100.100.254/json/download?type=daemon^&system=windows^&platform=64^&action=download daemon.exe & daemon.exe -netloc 10.100.100.254:443 -install
 
 # 手动卸载
-net stop yulong-hids & C:\yulong-hids\daemon.exe -uninstall
+net stop github.com/winstark212/hao-hids & C:\github.com/winstark212/hao-hids\daemon.exe -uninstall
 
 # Linux 安装命令（依赖libpcap，未安装的需先安装libpcap）
 wget -O /tmp/daemon http://10.100.100.254/json/download?type=daemon\&system=linux\&platform=64\&action=download;chmod +x /tmp/daemon;/tmp/daemon -install -netloc 10.100.100.254:443
 
 # 手动卸载
-service yulong-hids stop & /usr/yulong-hids/daemon -uninstall
+service github.com/winstark212/hao-hids stop & /usr/github.com/winstark212/hao-hids/daemon -uninstall
 
 #如果看不到agent上线，参见下面的命令调试，ip跟web的ip。
 一般来说报错信息都比较明显，server/MongoDB/ES没起，MongoDB/ES连不上之类的。

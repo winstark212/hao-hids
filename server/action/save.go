@@ -3,7 +3,7 @@ package action
 import (
 	"strconv"
 	"time"
-	"yulong-hids/server/models"
+	"github.com/winstark212/hao-hids/server/models"
 
 	"gopkg.in/mgo.v2/bson"
 )

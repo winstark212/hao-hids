@@ -3,7 +3,7 @@ package task
 import (
 	"encoding/json"
 	"os"
-	"yulong-hids/daemon/common"
+	"github.com/winstark212/hao-hids/daemon/common"
 )
 
 // Task 接收任务结构

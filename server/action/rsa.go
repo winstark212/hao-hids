@@ -8,7 +8,7 @@ import (
 	"errors"
 	"io"
 	"math/big"
-	"yulong-hids/server/models"
+	"github.com/winstark212/hao-hids/server/models"
 )
 
 var bigZero = big.NewInt(0)

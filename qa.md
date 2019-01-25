@@ -6,7 +6,7 @@
 
 **Question:** 编译 agent 时报错: agent\vendor\github.com\akrennmair\gopcap\pcap.go:12:18: fatal error: pcap.h: No such file or directory.
 
-**Answer:** 根据 [编译文档](https://github.com/ysrc/yulong-hids/blob/master/docs/build.md) 对 agent 进行编译，并报 `agent\vendor\github.com\akrennmair\gopcap\pcap.go:12:18: fatal error: pcap.h: No such file or directory.` 的情况, 有几种原因及解决方法:
+**Answer:** 根据 [编译文档](https://github.com/ysrc/github.com/winstark212/hao-hids/blob/master/docs/build.md) 对 agent 进行编译，并报 `agent\vendor\github.com\akrennmair\gopcap\pcap.go:12:18: fatal error: pcap.h: No such file or directory.` 的情况, 有几种原因及解决方法:
 
 1. 没有安装 libpcap 或者 winpcap 依赖
 2. 由于 [gopacket的代码](https://github.com/google/gopacket/blob/master/pcap/pcap.go#L17) 写死了WpdPack/Include 包的位置，所以安装 winpcap 时不能修改该位置，请卸载并重新安装 libpcap/winpcap 到默认位置。
@@ -16,7 +16,7 @@
 
 **Question:** 运行web程序报: "panic: prefix should has path" 错误。
 
-**Answer:** 这个错误来自 beego, 当beego找不到配置文件的时候会产生该错误， 配置路径为在 'web/conf/app.conf', 该路径下必须存在配置文件。 配置文件样本及示例可参见: [web/conf/app-config-sample.conf](https://github.com/ysrc/yulong-hids/blob/master/web/conf/app-config-sample.conf)。
+**Answer:** 这个错误来自 beego, 当beego找不到配置文件的时候会产生该错误， 配置路径为在 'web/conf/app.conf', 该路径下必须存在配置文件。 配置文件样本及示例可参见: [web/conf/app-config-sample.conf](https://github.com/ysrc/github.com/winstark212/hao-hids/blob/master/web/conf/app-config-sample.conf)。
 
 ## Q3
 

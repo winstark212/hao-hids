@@ -3,8 +3,8 @@ package controllers
 import (
 	"net/url"
 	"strings"
-	"yulong-hids/web/models"
-	"yulong-hids/web/utils"
+	"github.com/winstark212/hao-hids/web/models"
+	"github.com/winstark212/hao-hids/web/utils"
 
 	"github.com/astaxie/beego"
 	"gopkg.in/mgo.v2/bson"

@@ -1,7 +1,7 @@
 package models
 
 import (
-	"yulong-hids/web/models/wmongo"
+	"github.com/winstark212/hao-hids/web/models/wmongo"
 
 	"github.com/astaxie/beego"
 	"gopkg.in/mgo.v2/bson"

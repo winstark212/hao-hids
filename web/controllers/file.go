@@ -1,9 +1,9 @@
 package controllers
 
 import (
-	"yulong-hids/web/models"
-	"yulong-hids/web/settings"
-	"yulong-hids/web/utils"
+	"github.com/winstark212/hao-hids/web/models"
+	"github.com/winstark212/hao-hids/web/settings"
+	"github.com/winstark212/hao-hids/web/utils"
 
 	"fmt"
 	"path"

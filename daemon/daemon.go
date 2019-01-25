@@ -8,9 +8,9 @@ import (
 	"runtime"
 	"time"
 
-	"yulong-hids/daemon/common"
-	"yulong-hids/daemon/install"
-	"yulong-hids/daemon/task"
+	"github.com/winstark212/hao-hids/daemon/common"
+	"github.com/winstark212/hao-hids/daemon/install"
+	"github.com/winstark212/hao-hids/daemon/task"
 
 	"github.com/kardianos/service"
 )
@@ -65,13 +65,13 @@ func (p *program) Stop(s service.Service) error {
 
 func main() {
 	flag.StringVar(&common.ServerIP, "netloc", "", "* WebServer 192.168.1.100:443")
-	installBool = flag.Bool("install", false, "Install yulong-hids service")
-	uninstallBool = flag.Bool("uninstall", false, "Remove yulong-hids service")
-	registeredBool = flag.Bool("register", false, "Registration yulong-hids service")
+	installBool = flag.Bool("install", false, "Install github.com/winstark212/hao-hids service")
+	uninstallBool = flag.Bool("uninstall", false, "Remove github.com/winstark212/hao-hids service")
+	registeredBool = flag.Bool("register", false, "Registration github.com/winstark212/hao-hids service")
 	flag.Parse()
 	svcConfig := &service.Config{
-		Name:        "yulong-hids",
-		DisplayName: "yulong-hids",
+		Name:        "github.com/winstark212/hao-hids",
+		DisplayName: "github.com/winstark212/hao-hids",
 		Description: "集实时监控、异常检测、集中管理为一体的主机安全监测系统",
 		Arguments:   []string{"-netloc", common.ServerIP},
 	}

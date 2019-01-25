@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"yulong-hids/web/settings"
-	"yulong-hids/web/utils"
+	"github.com/winstark212/hao-hids/web/settings"
+	"github.com/winstark212/hao-hids/web/utils"
 
 	"github.com/astaxie/beego"
 )

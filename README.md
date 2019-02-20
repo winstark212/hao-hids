@@ -1,19 +1,19 @@
-# 驭龙 HIDS 
+# Hao HIDS 
 
 
 [![License](https://img.shields.io/badge/License-GPL%20v2-blue.svg?style=flat-square)](https://github.com/ysrc/github.com/winstark212/hao-hids/blob/master/LICENSE)
 [![Golang](https://img.shields.io/badge/Golang-1.9-yellow.svg?style=flat-square)](https://www.golang.org/) [![Mongodb](https://img.shields.io/badge/MongoDB-3.4-red.svg?style=flat-square)](https://www.mongodb.com/download-center?jmp=nav) [![elasticsearch](https://img.shields.io/badge/Elasticsearch-5.6.4-green.svg?style=flat-square)](https://www.elastic.co/downloads/elasticsearch)
 
 
-**驭龙HIDS**是一款由 YSRC 开源的入侵检测系统，由 `Agent`， `Daemon`， `Server` 和 `Web` 四个部分组成，集异常检测、监控管理为一体，拥有异常行为发现、快速阻断、高级分析等功能，可从多个维度行为信息中发现入侵行为。
+**Hao HIDS(Forked from yulong HIDS)** is a open source intrusion detection system, it's has 4 parts `Agent`, `Daemon`, `Server` and `Web`. the main features are anomaly detection, monitoring, abnormal detection, rapid blocking, advanced analysis and others functions.  
 
-**Agent**为采集者角色，收集服务器信息、开机启动项、计划任务、监听端口、服务、登录日志、用户列表，实时监控文件操作行为、网络连接、执行命令，初步筛选整理后通过RPC协议传输到Server节点。
+**Agent** is the collector role, collecting server information, booting items, scheduled tasks, listening ports, services, login logs, user lists, real-time monitoring of file operation behavior, network connection, execution commands, initial screening and transmission to the server through RPC protocol node.
 
-**Daemon**为守护服务进程，为Agent提供进程守护、静默环境部署作用，其任务执行功能通过接收服务端的指令实现Agent热更新、阻断功能和自定义命令执行等，任务传输过程使用RSA进行加密。
+**Daemon** is a deamon service process, providing the agent with process guard and silent environment deployement. Its task execution function implements agent hot update, blocking function and custom command execution by reveiving instructions from the server. The task transmission process uses RSA for encryption.
 
-**Server**为整套系统的大脑，支持横向扩展分布式部署，解析用户定义的规则（已内置部分基础规则）对从各Agent接收到的信息和行为进行分析检测和保存，可从各个维度的信息中发现webshell写入行为、异常登录行为、异常网络连接行为、异常命令调用行为等，从而实现对入侵行为实时预警。
+**Server** is the  brain of the whole system, supports horizontally distributed deployment, parses user-defined rules(built-in partial basic rules), analyzes and detects the information and behavior, abnormal login behavior, abnormal network connection behavior, abnormal command invocation behaviro, etc., to achieve real-time warning of intrusion behavior.  
 
-## 文档
+## Document
 
 * [部署文档](./docs/install.md)
 * [Docker快速体验部署文档](./docs/docker.md)
@@ -23,41 +23,41 @@
 * [Web安装向导指南](./docs/guide.md)
 * [Q&A](./qa.md)
 
-## 功能特点
+## Features
 
-- 实时监控、秒级响应
-- 全局首次出现概念，可发现未知威胁
-- 支持自定义规则，高扩展性
-- 高级分析功能，可溯源
-- 全局快速阻断（进程、文件）
-- 威胁情报查询（可自定义接口）
+- Real-time monitoring, sencod-level response
+- The first global concept, you can find unknown threats
+- Support for custom rules, high scalabiltiy
+- Advanced analysis capabitities, traceable
+- Global fast blocking(process, file)
+- Threat intelligence query(customize interface)
 
 
 > 相比其他同类应用，维护使用此系统需要有一定的安全判断分析能力。
 
 
-## 整体架构图
+## Overall architecture
 
 ![](./docs/jg.png)
 
-## 测试效果图
+## Test effect chart
 
 ![](./docs/yulong.gif)
 
 
 ## TODO
-- 建立入侵行为case库，自动化重放case模拟测试
-- 机器学习判断可疑行为，作为规则之外的补充
-- 资产盘点，例如识别补丁，应用版本、负责人，各种包/kernel版本...
-- 辅以漏洞库，能更快速的应急响应，哪些必须要修，那些不修可以接受
-- 区分通讯模式（主动、被动）
-- 使用消息队列代替RPC
-- 基线核查，没有代码能力的社区成员也可以整理好相关文档，YSRC来实现
-- 幻影蜜罐，agent动态代理蜜罐端口，大规模提升蜜罐覆盖密度
-- 支持多场景（办公环境、Docker），目前驭龙仅适合线上服务器环境
-- 轻量级的linux内核防护，在不升级内核的情况下，免疫一些攻击
+- Create an instrusion case library, automated case simulation test  
+- Machine learning to judge suspicious behavior, as a supplement the the rules
+- Asset inventory, such as identification patches, application versions, responsible persons, various package/kernel versions...
+- Supplement with a vulnerability library, it can respond more quickly, which must be repaired, and those that can be repaired are acceptable.
+- Distinguish communication mode(active, passive)
+- Use message queue instead of RPC
+- Baseline verification
+- Phantom honey pot, agent dynamic proxy honeyport port, large-scale upgrade honeypot coverage desnity
+- Support multiple scenarios(office environment, Docker), currently Snapdragon is only suitable for online server environment
+- Lightweight linux kernel protection, immune to some attach without upgrading the kernel  
 
-## 源码结构
+## Source structure
 ```
 ├─agent // Agent工程
 │  ├─client // RPC client 传输模块
@@ -92,18 +92,3 @@
     ├─utils // 功能模块
     └─views // 视图层，前端模板
 ```
-
-## 参与者及致谢
-
-致谢列表：[Contributors List](./contributors.md)
-
-## 关于
-
-本项目经过 YSRC 测试和部署，但由于企业网络架构与部署环境之间的差异，我们无法保证本项目在贵司环境中的稳定性及有效性。
-使用前请先自行测试和改动，对应用本系统可能导致的损失 YSRC 所属组织及公司概不负责。
-
-扫描下方二维码关注 YSRC 公众号，回复 驭龙 ，会有人拉你进驭龙的微信讨论群。
-
-
-![](./docs/ysrc.png)
-

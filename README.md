@@ -15,12 +15,12 @@
 
 ## Document
 
-* [部署文档](./docs/install.md)
-* [Docker快速体验部署文档](./docs/docker.md)
-* [使用帮助](./docs/help.md)
-* [规则编写](./docs/rule.md)
-* [编译指南](./docs/build.md)
-* [Web安装向导指南](./docs/guide.md)
+* [Deployment document](./docs/install.md)
+* [Docker quick experience deployement documentation](./docs/docker.md)
+* [Using help](./docs/help.md)
+* [Rule writing](./docs/rule.md)
+* [Compliation guide](./docs/build.md)
+* [Web installation wizard guide](./docs/guide.md)
 * [Q&A](./qa.md)
 
 ## Features
@@ -31,9 +31,6 @@
 - Advanced analysis capabitities, traceable
 - Global fast blocking(process, file)
 - Threat intelligence query(customize interface)
-
-
-> 相比其他同类应用，维护使用此系统需要有一定的安全判断分析能力。
 
 
 ## Overall architecture
@@ -59,36 +56,36 @@
 
 ## Source structure
 ```
-├─agent // Agent工程
-│  ├─client // RPC client 传输模块
+├─agent // Agent engineering
+│  ├─client // RPC client tranmission module
 │  ├─common
-│  ├─collect // 信息收集（开机启动项、计划任务、监听端口、服务、登录日志、用户列表）
-│  └─monitor // 行为监控（文件操作、网络连接、执行命令）
+│  ├─collect // information collection(starup items, scheduled tasks, listening ports, services, login logs, user lists)
+│  └─monitor // behavior monitoring(file operations, network connections, exection commands)
 ├─bin
-│  ├─linux-64 // Linux 64位的依赖包
-│  ├─win-32 // Windows 32位的依赖包
-│  └─win-64 // Windows 64位的依赖包
-├─daemon // Daemon工程
+│  ├─linux-64 // Linux 64-bit dependencies
+│  ├─win-32 // Windows 32-bit dependencies
+│  └─win-64 // Windows 64-bit dependencies
+├─daemon // Daemon engineering
 │  ├─common
-│  ├─install // 安装Agent和相关依赖
-│  └─task // 任务接收
-├─docs // 说明文档
-├─driver // Windows 命令监控驱动
-├─server // Server节点工程
-│  ├─action // Server基本功能
-│  ├─models // 数据库相关
-│  └─safecheck // 安全检测模块（黑白名单，规则解析引擎）
-├─syscall_hook # 监控执行命令的Linux内核代码
-│  └─test_bench // 方便调试的
-└─web // Web控制台项目
-    ├─conf // web端配置文件
-    ├─controllers // 控制器，负责转发请求，对请求进行处理
-    ├─httpscert // https证书和RSA私钥，内置的会在向导过程中自动更新
-    ├─models // 模型，数据管理和数据库设计
-    ├─routers // 路由
-    ├─settings // 部分全局变量
-    ├─static // 静态文件
-    ├─upload_files // agent、daemon、依赖包文件
-    ├─utils // 功能模块
-    └─views // 视图层，前端模板
+│  ├─install // install agent and related dependencies
+│  └─task // task reception
+├─docs // documention
+├─driver // Windows command monitor driver
+├─server // Server node engineering
+│  ├─action // server basic functions
+│  ├─models // database related
+│  └─safecheck // security detection module(black and white list, rule analysis engine)
+├─syscall_hook # monitor the Linux kernel code that executes the command
+│  └─test_bench //
+└─web // Web console project
+    ├─conf // web configuration file
+    ├─controllers // controller, responsible for forwarding requests and procession requests
+    ├─httpscert // https certificate and RSA private key, built-in will be automaticaly update during the wizard process
+    ├─models // model, data management and database design
+    ├─routers // routing
+    ├─settings // partial global variable
+    ├─static // static file
+    ├─upload_files // agent、daemon、dependency package file
+    ├─utils // functional module
+    └─views // view layer, front end template
 ```

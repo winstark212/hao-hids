@@ -44,7 +44,7 @@ services:
       ZOOKEEPER_SERVERS: zk1:22888:23888;zk2:32888:33888;zk3:42888:43888
 
   kafka-1:
-    image: confluentinc/cp-kafka:latest
+    image: confluentinc/cp-kafka:3.0.0
     networks: 
       - hao-network
     ports:
@@ -59,7 +59,7 @@ services:
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://:19092
 
   kafka-2:
-    image: confluentinc/cp-kafka:latest
+    image: confluentinc/cp-kafka:3.0.0
     networks: 
       - hao-network
     ports:
@@ -74,7 +74,7 @@ services:
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://:29092
 
   kafka-3:
-    image: confluentinc/cp-kafka:latest
+    image: confluentinc/cp-kafka:3.0.0
     networks: 
       - hao-network
     ports: 
@@ -83,7 +83,7 @@ services:
       - zk1
       - zk2
       - zk3
-    environment:
+bootstrap_servers    environment:
       KAFKA_BROKER_ID: 3
       KAFKA_ZOOKEEPER_CONNECT: zk1:22181,zk2:32181,zk3:42181
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://:39092

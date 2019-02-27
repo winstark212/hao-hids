@@ -35,7 +35,7 @@
 
 ## Overall architecture
 
-![](./docs/jg.png)
+![](./docs/ar.png)
 
 ## Test effect chart
 

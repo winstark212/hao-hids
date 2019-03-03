@@ -2,19 +2,18 @@
 # coding=utf-8
 # by nearg1e (nearg1e.com@gmail[dot]com)
 """
-驭龙hids的编译脚本，一键打包成对应的压缩包。
+The compilation script of Hao hids is packaged into a corresponding compression package.
 
-该脚本会在 bin 目录下生成一个 build 文件夹, 文件名为:build_+可读的时间字符串。
-build 目录下文件如下:
+The script will generate a build folder in the bin directory with the file name: build_+ readable time string.
 
-├── agent|agent.exe    当前平台的agent可执行文件
-├── daemon|daemon.exe  当前平台的daemon可执行文件
-├── server|server.exe  当前平台的server可执行文件
-├── rules.json         默认规则，供web安装时上传
-├── web                web文件文件夹，包含web可执行文件和静态文件
-├── linux-64.zip       包含着agent，daemon和依赖文件的压缩包，供web安装时上传
-├── doc.zip            项目文档
-└── web.zip            web文件文件夹的压缩包
+├── agent|agent.exe    agent executable file for current platform
+├── daemon|daemon.exe  deamon executable file for current platform
+├── server|server.exe  server executable file for current platform
+├── rules.json         default rules for uploading during web installation
+├── web                web folder containing web executables and static files
+├── linux-64.zip       contains the package of agent, deamon and dependencies file for uploading during web installation
+├── doc.zip            project documentation
+└── web.zip            compressed package of web folder
 
 """
 
